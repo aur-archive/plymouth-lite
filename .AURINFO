@@ -1,0 +1,25 @@
+pkgbase = plymouth-lite
+	pkgdesc = Boot splash screen based on Fedora's Plymouth code
+	pkgver = 0.6.0
+	pkgrel = 5.03
+	url = https://github.com/nemomobile/plymouth-lite
+	install = plymouth-lite.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	depends = libpng12
+	conflicts = plymouth
+	source = plymouth-lite::git://github.com/nemomobile/plymouth-lite.git#tag=0.6.0-5
+	source = plymouth-lite-halt.service
+	source = plymouth-lite-poweroff.service
+	source = plymouth-lite-reboot.service
+	source = plymouth-lite-start.service
+	source = plymouth-lite-0.6.0-01-fix-build.patch
+	source = plymouth-lite-0.6.0-21-16bpp.patch
+	source = plymouth-lite_hook
+	source = plymouth-lite_install
+	backup = usr/share/plymouth/splash.png
+
+pkgname = plymouth-lite
+
